@@ -21,7 +21,7 @@ jobs:
         env:
           OWNER: pocketbase
           REPO: pocketbase
-          EXCLUDES: '["draft", "prerelease"]'
+          EXCLUDES: '["draft"]'
         with:
           result-encoding: string
           script: |
