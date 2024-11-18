@@ -35,7 +35,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ghcr.io/THA-Pyramid/pocketbase
+            ghcr.io/${{ github.repository_owner }}/pocketbase 
           tags: |
             type=semver,pattern={{version}},value=${{ steps.version.outputs.value }}
             type=semver,pattern={{major}}.{{minor}},value=${{ steps.version.outputs.value }}
